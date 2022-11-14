@@ -1,13 +1,18 @@
 import { PostCardContainer, PostCardContent, PostHeader } from "./styles";
 
-export function PostCard() {
+interface PostProps {
+  title: string;
+  created_at: string;
+}
+
+export function PostCard({ title, created_at }: PostProps) {
   return (
     <PostCardContainer>
       <PostCardContent>
         <PostHeader>
-          <h1>JavaScript data types and data structures</h1>
+          <h1>{title}s</h1>
           <span>
-            Há 1 dia
+            {created_at}
           </span>
         </PostHeader>
         <p>

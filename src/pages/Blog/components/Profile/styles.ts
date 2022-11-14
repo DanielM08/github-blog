@@ -29,6 +29,8 @@ export const ProfileSummary = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  width: 100%;
+
   p {
     line-height: 1.6;
   }
@@ -52,7 +54,9 @@ export const GitHubLink = styled.a`
   
   text-transform: uppercase;
   font-size: 0.75rem;
-  color: ${props => props.theme.blue}
+  color: ${props => props.theme.blue};
+
+  text-decoration: none;
 `
 
 export const GitInfo = styled.div`

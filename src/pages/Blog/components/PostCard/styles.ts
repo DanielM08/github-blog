@@ -17,7 +17,7 @@ export const PostCardContainer = styled.main`
 export const PostCardContent = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 2rem;
 
   p {
     font-size: 0.875rem;
@@ -31,12 +31,13 @@ export const PostHeader = styled.header`
   justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  height: 100px;
 
   h1 {
     color: ${props => props.theme["base-title"]};
     font-size: 1.2rem;
     line-height: 1.6;
-    width: 283px;
+    width: 230px;
   }
 
   span {
